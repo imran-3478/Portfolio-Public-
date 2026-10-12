@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Ads Full Course (বাংলায়) — Imran Akanda</title>
+<meta name="description" content="Google Ads সম্পূর্ণ কোর্স বাংলায় — ৬টা ভিডিও: কীভাবে কাজ করে, অ্যাকাউন্ট সেটআপ, কীওয়ার্ড, বিডিং, অপটিমাইজ, সার্টিফিকেট ও ক্লায়েন্ট কাজ।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e0c; --bg2:#0d1310; --card:rgba(255,255,255,.035);
+  --border:rgba(255,255,255,.09); --text:#eef3f1; --muted:#9fb0a9;
+  --green:#0bb36b; --green-d:#0B7042; --gold:#d4af37; --gold-d:#C9A227;
+  --grad:linear-gradient(135deg,#0bb36b 0%,#0B7042 45%,#C9A227 100%);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Hind Siliguri','Inter',system-ui,sans-serif;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(10,14,12,.72);border-bottom:1px solid var(--border)}
+.nav-in{max-width:1080px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:1.15rem}
+.logo span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.back{font-size:.9rem;color:var(--muted);border:1px solid var(--border);padding:8px 18px;border-radius:999px}
+.back:hover{color:var(--gold);border-color:var(--gold)}
+.hero{padding:130px 0 50px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(600px 400px at 15% 20%,rgba(11,179,107,.14),transparent 60%),
+  radial-gradient(700px 500px at 85% 75%,rgba(201,162,39,.12),transparent 60%);pointer-events:none}
+.hero-in{position:relative}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:var(--green);border:1px solid rgba(11,179,107,.35);background:rgba(11,179,107,.08);padding:7px 18px;border-radius:999px}
+.gbar{display:flex;height:6px;border-radius:3px;overflow:hidden;max-width:320px;margin:26px auto 0}
+.gbar i{flex:1}
+.hero h1{font-size:clamp(1.9rem,7vw,3rem);font-weight:800;line-height:1.25;margin-top:18px}
+.hero h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--muted);max-width:620px;margin:14px auto 0;font-size:1.05rem}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:34px auto 0;max-width:640px}
+@media(min-width:640px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px 10px;text-align:center}
+.stat .n{font-size:1.6rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .l{font-size:.82rem;color:var(--muted);margin-top:4px}
+section{padding:56px 0}
+.sec-head{text-align:center;margin-bottom:34px}
+.sec-tag{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.sec-head h2{font-size:clamp(1.5rem,5.5vw,2.2rem);font-weight:800}
+.sec-head h2::after{content:"";display:block;width:56px;height:4px;border-radius:2px;background:var(--grad);margin:14px auto 0}
+.mod{background:var(--card);border:1px solid var(--border);border-radius:22px;overflow:hidden;margin-bottom:26px}
+.mod-vid{position:relative;background:#000}
+.mod-vid video{width:100%;display:block;aspect-ratio:16/9;background:#000}
+.mod-body{padding:24px 22px}
+.mod-num{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:1.5px;color:#06110b;background:var(--grad);padding:5px 14px;border-radius:999px;margin-bottom:10px}
+.mod-body h3{font-size:1.35rem;font-weight:700;line-height:1.4}
+.mod-body p{color:var(--muted);margin:10px 0 14px;font-size:.98rem}
+.topics{display:flex;flex-wrap:wrap;gap:8px}
+.topic{font-size:.8rem;font-weight:600;padding:7px 14px;border-radius:999px;background:rgba(11,179,107,.08);border:1px solid rgba(11,179,107,.25);color:var(--green)}
+.dur{float:right;font-size:.8rem;color:var(--gold);font-weight:700;border:1px solid rgba(201,162,39,.35);padding:5px 12px;border-radius:999px}
+.cta-card{background:linear-gradient(135deg,rgba(11,179,107,.12),rgba(201,162,39,.10));border:1px solid var(--border);border-radius:22px;padding:36px 26px;text-align:center}
+.cta-card h2{font-size:clamp(1.4rem,5vw,2rem);font-weight:800;margin-bottom:10px}
+.cta-card p{color:var(--muted);max-width:560px;margin:0 auto 22px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;padding:14px 30px;border-radius:999px;font-size:1rem;background:var(--grad);color:#06110b;box-shadow:0 10px 30px rgba(11,179,107,.25)}
+footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--muted);font-size:.88rem}
+footer a{color:var(--gold);font-weight:600}
+</style>
+</head>
+<body>
+<nav><div class="nav-in">
+  <a class="logo" href="index.html">Imran <span>Akanda</span></a>
+  <a class="back" href="index.html">← Portfolio</a>
+</div></nav>
+
+<header class="hero"><div class="wrap hero-in">
+  <span class="badge">🎓 ফ্রি ভিডিও কোর্স</span>
+  <div class="gbar"><i style="background:#4285F4"></i><i style="background:#EA4335"></i><i style="background:#FBBC05"></i><i style="background:#34A853"></i></div>
+  <h1>Google Ads <span class="hl">Full Course</span><br>সম্পূর্ণ বাংলায়</h1>
+  <p class="sub">শূন্য থেকে ক্লায়েন্টের কাজ পাওয়া পর্যন্ত — ৬টা ছোট ভিডিওতে Google Ads-এর পুরো সিস্টেম। বাস্তব উদাহরণ, সহজ ভাষা, বাংলা ভয়েসওভার।</p>
+  <div class="stats">
+    <div class="stat"><div class="n">৬</div><div class="l">ভিডিও মডিউল</div></div>
+    <div class="stat"><div class="n">~৯ মিনিট</div><div class="l">মোট দৈর্ঘ্য</div></div>
+    <div class="stat"><div class="n">১০০%</div><div class="l">বাংলা ভয়েসওভার</div></div>
+    <div class="stat"><div class="n">ফ্রি</div><div class="l">সবার জন্য</div></div>
+  </div>
+</div></header>
+
+<section><div class="wrap">
+  <div class="sec-head"><span class="sec-tag">Course Modules</span><h2>৬টা মডিউল, ধাপে ধাপে শেখো</h2></div>
+
+  <div class="mod">
+    <div class="mod-vid"><video controls preload="metadata" poster="gads/poster1.jpg"><source src="gads/module1.mp4" type="video/mp4"></video></div>
+    <div class="mod-body">
+      <span class="mod-num">MODULE ১</span><span class="dur">⏱ ২:০৩</span>
+      <h3>Google Ads কী ও কীভাবে কাজ করে</h3>
+      <p>Google-এর বিজ্ঞাপন সিস্টেমের ভিত্তি — নিলাম (Auction) কীভাবে হয়, Ad Rank = Bid × Quality Score, ৪ রকম ক্যাম্পেইন (Search, YouTube, Display, Shopping), keyword match types, CPC, আর Meta ads vs Google ads-এর আসল পার্থক্য।</p>
+      <div class="topics"><span class="topic">Auction</span><span class="topic">Ad Rank</span><span class="topic">Campaign Types</span><span class="topic">Match Types</span><span class="topic">CPC</span></div>
+    </div>
+  </div>
+
+  <div class="mod">
+    <div class="mod-vid"><video controls preload="metadata" poster="gads/poster2.jpg"><source src="gads/module2.mp4" type="video/mp4"></video></div>
+    <div class="mod-body">
+      <span class="mod-num">MODULE ২</span><span class="dur">⏱ ১:৪৭</span>
+      <h3>অ্যাকাউন্ট সেটআপ ও কনভার্শন ট্র্যাকিং</h3>
+      <p>Gmail দিয়ে অ্যাকাউন্ট খোলা (ঢাকা টাইমজোন, BDT কারেন্সি), আলমারি-স্ট্রাকচার — Account → Campaign → Ad Group, Google Tag Manager দিয়ে conversion tracking (Meta Pixel-এর মতোই সিস্টেম), আর Preview Mode-এ টেস্ট করা।</p>
+      <div class="topics"><span class="topic">Account Setup</span><span class="topic">GTM</span><span class="topic">Conversion Tracking</span><span class="topic">Testing</span></div>
+    </div>
+  </div>
+
+  <div class="mod">
+    <div class="mod-vid"><video controls preload="metadata" poster="gads/poster3.jpg"><source src="gads/module3.mp4" type="video/mp4"></video></div>
+    <div class="mod-body">
+      <span class="mod-num">MODULE ৩</span><span class="dur">⏱ ১:৪১</span>
+      <h3>কীওয়ার্ড রিসার্চ ও বিডিং স্ট্র্যাটেজি</h3>
+      <p>কাস্টমার কী লিখে সার্চ করে তা খোঁজা (Keyword Planner), negative keywords দিয়ে টাকা বাঁচানো, Manual CPC vs Smart Bidding, ৪টা smart strategy (Max Clicks, Max Conversions, Target CPA, Target ROAS), আর বাজেটের সোনালি নিয়ম — দিনে ৩০০ টাকা দিয়ে শুরু।</p>
+      <div class="topics"><span class="topic">Keyword Research</span><span class="topic">Negative Keywords</span><span class="topic">Smart Bidding</span><span class="topic">Budget</span></div>
+    </div>
+  </div>
+
+  <div class="mod">
+    <div class="mod-vid"><video controls preload="metadata" poster="gads/poster4.jpg"><source src="gads/module4.mp4" type="video/mp4"></video></div>
+    <div class="mod-body">
+      <span class="mod-num">MODULE ৪</span><span class="dur">⏱ ১:১৮</span>
+      <h3>ভালো বিজ্ঞাপন লেখা ও কোয়ালিটি স্কোর</h3>
+      <p>কাস্টমারের ভাষায় হেডলাইন, স্পষ্ট Call-to-Action, হেডলাইনে keyword-এর মিল, Quality Score-এর ৩ উপাদান (relevance, CTR, landing page), আর ক্লিকের পরের landing page মিলিয়ে নেওয়া — স্কোর বেশি মানে কম খরচে উপরে থাকা।</p>
+      <div class="topics"><span class="topic">Ad Copy</span><span class="topic">CTA</span><span class="topic">Quality Score</span><span class="topic">Landing Page</span></div>
+    </div>
+  </div>
+
+  <div class="mod">
+    <div class="mod-vid"><video controls preload="metadata" poster="gads/poster5.jpg"><source src="gads/module5.mp4" type="video/mp4"></video></div>
+    <div class="mod-body">
+      <span class="mod-num">MODULE ৫</span><span class="dur">⏱ ১:০৯</span>
+      <h3>ক্যাম্পেইন অপটিমাইজ ও রিপোর্ট পড়া</h3>
+      <p>বিজ্ঞাপন চালুর পরের কাজ — CTR দেখে দুর্বল ad ধরা, search term report পরিষ্কার করা, জেতা keyword-এ বাজেট সরানো, বিক্রির সময়ে ad scheduling, ডেলিভারি এলাকায় geo-targeting, আর A/B টেস্টে ছোট ছোট জয়।</p>
+      <div class="topics"><span class="topic">CTR</span><span class="topic">Optimization</span><span class="topic">Ad Scheduling</span><span class="topic">A/B Test</span></div>
+    </div>
+  </div>
+
+  <div class="mod">
+    <div class="mod-vid"><video controls preload="metadata" poster="gads/poster6.jpg"><source src="gads/module6.mp4" type="video/mp4"></video></div>
+    <div class="mod-body">
+      <span class="mod-num">MODULE ৬</span><span class="dur">⏱ ১:০৭</span>
+      <h3>সার্টিফিকেট ও ক্লায়েন্টের কাজ পাওয়া</h3>
+      <p>Google Skillshop-এ ফ্রি পরীক্ষা দিয়ে সার্টিফিকেট, case study দিয়ে portfolio, ফ্রি audit অফার করে client hunting (Facebook groups, LinkedIn, SEOClerk), প্যাকেজ pricing, আর Meta Pixel স্কিলের সাথে cross-sell করে দ্বিগুণ অর্ডার।</p>
+      <div class="topics"><span class="topic">Skillshop</span><span class="topic">Portfolio</span><span class="topic">Client Hunting</span><span class="topic">Pricing</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="cta-card">
+    <h2>Google Ads সেটআপ লাগবে?</h2>
+    <p>কোর্স দেখে নিজে করতে চাও — ভালো। আর সময় না থাকলে আমি করে দিচ্ছি: Pixel + Google Ads conversion tracking, campaign setup, optimization।</p>
+    <a class="btn" href="https://wa.me/8801767462347?text=Hi%20Imran!%20I%20need%20Google%20Ads%20setup.">💬 WhatsApp-এ মেসেজ করো</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  © 2026 Imran Akanda · <a href="index.html">← Back to Portfolio</a>
+</div></footer>
+</body>
+</html>
