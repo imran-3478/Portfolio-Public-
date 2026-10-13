@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>প্যান্ডাস দিয়ে ডেটা অ্যানালাইসিস — সম্পূর্ণ গাইড</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Hind Siliguri',sans-serif;background:#0b2237;color:#eaf2f8;line-height:1.75;padding:0 0 60px}
+.hero{background:linear-gradient(135deg,#10425e,#0a2a44);padding:38px 22px;text-align:center;border-bottom:3px solid #40c8aa}
+.hero h1{font-size:30px;color:#fff;margin-bottom:8px}
+.hero p{color:#9fd8c9;font-size:16px}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+.card{background:#10293f;border:1px solid #1e4a66;border-radius:14px;padding:20px;margin:18px 0}
+.card h2{color:#40c8aa;font-size:21px;margin-bottom:10px;border-bottom:1px solid #1e4a66;padding-bottom:8px}
+.card h3{color:#ffcf5e;font-size:17px;margin:14px 0 6px}
+.card p{margin:8px 0;font-size:16px}
+.card ul{margin:8px 0 8px 20px;font-size:16px}
+.card li{margin:5px 0}
+pre{background:#0a1a2b;border:1px solid #24506e;border-radius:10px;padding:14px;overflow-x:auto;margin:10px 0;font-size:14.5px;line-height:1.6}
+code{font-family:'DejaVu Sans Mono',monospace;color:#bfe3ff}
+.c{color:#7fb98a}
+.tip{background:#123a2c;border-left:4px solid #40c8aa;padding:12px 14px;border-radius:0 10px 10px 0;margin:12px 0;font-size:15px}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:15px}
+th,td{border:1px solid #24506e;padding:8px;text-align:left}
+th{background:#16425f;color:#ffcf5e}
+.ex{background:#2a1f0e;border:1px dashed #ffcf5e;border-radius:10px;padding:14px;margin:12px 0}
+.ex b{color:#ffcf5e}
+footer{text-align:center;color:#7fa3b8;margin-top:30px;font-size:14px}
+</style>
+</head>
+<body>
+<div class="hero">
+<p style="margin-bottom:14px"><a href="index.html" style="color:#9fd8c9;font-size:14px">← Portfolio-তে ফিরুন</a></p>
+<h1>🐼 প্যান্ডাস দিয়ে ডেটা অ্যানালাইসিস</h1>
+<p>সম্পূর্ণ বাংলা গাইড — Google Colab-এ হাতেকলমে শিখুন</p>
+</div>
+<div class="wrap">
+
+<div class="card">
+<h2>🎬 ভিডিও টিউটোরিয়াল</h2>
+<video controls preload="metadata" style="width:100%;border-radius:10px;background:#000" src="pandas-data-analysis.mp4"></video>
+<p style="margin-top:8px">বাংলা ভিডিও ব্যাখ্যা — নিচের পুরো গাইডের ভিজ্যুয়াল সংস্করণ।</p>
+</div>
+
+<div class="card">
+<h2>১. প্যান্ডাস কী?</h2>
+<p>প্যান্ডাস (pandas) হলো পাইথনের সবচেয়ে জনপ্রিয় <b>ডেটা অ্যানালাইসিস লাইব্রেরি</b>। এর দুটো মূল জিনিস:</p>
+<ul>
+<li><b>DataFrame</b> — এক্সেল শিটের মতো সারি-কলামওয়ালা টেবিল (এটাই ৯৫% কাজে লাগে)</li>
+<li><b>Series</b> — টেবিলের একটা কলাম (এক সারি ডেটা)</li>
+</ul>
+<div class="tip">💡 মনে রাখুন: <b>df</b> মানে DataFrame — সব টিউটোরিয়ালে এই নামই ব্যবহার হয়।</div>
+</div>
+
+<div class="card">
+<h2>২. শুরু করা</h2>
+<p>Google Colab-এ প্যান্ডাস আগে থেকেই ইনস্টল করা থাকে। শুধু import করলেই হবে:</p>
+<pre><code>import pandas as pd</code></pre>
+<p>নিজের কম্পিউটারে হলে একবার ইনস্টল করে নিন:</p>
+<pre><code><span class="c"># টার্মিনালে লিখুন (Colab-এ ! চিহ্ন দিয়ে)</span>
+!pip install pandas</code></pre>
+</div>
+
+<div class="card">
+<h2>৩. ডেটাফ্রেম তৈরি করা</h2>
+<p>ডিকশনারি থেকে সবচেয়ে সহজে বানানো যায় — চাবি হয় কলামের নাম:</p>
+<pre><code>data = {'name': ['Rahim', 'Karim', 'Sumi'],
+        'city': ['Dhaka', 'Tangail', 'Dhaka'],
+        'sales': [500, 800, 650]}
+df = pd.DataFrame(data)
+print(df)</code></pre>
+</div>
+
+<div class="card">
+<h2>৪. CSV / Excel ফাইল পড়া</h2>
+<p>বাস্তবে ডেটা ফাইলে থাকে। এক লাইনেই পড়া যায়:</p>
+<pre><code>df = pd.read_csv('sales.csv')      <span class="c"># CSV ফাইল</span>
+df = pd.read_excel('sales.xlsx')   <span class="c"># Excel ফাইল</span></code></pre>
+<div class="tip">💡 Colab-এ ফাইল upload করতে বাম পাশের 📁 folder আইকনে ক্লিক করুন।</div>
+</div>
+
+<div class="card">
+<h2>৫. ডেটাকে চেনা (প্রথম ৫ মিনিটের কাজ)</h2>
+<p>ডেটা হাতে পেয়েই এগুলো চালান:</p>
+<pre><code>df.head()       <span class="c"># প্রথম ৫টা রো দেখুন</span>
+df.tail()       <span class="c"># শেষ ৫টা রো</span>
+df.shape        <span class="c"># (রো সংখ্যা, কলাম সংখ্যা)</span>
+df.columns      <span class="c"># কলামের নামগুলো</span>
+df.info()       <span class="c"># কোন কলামে খালি ঘর আছে</span>
+df.describe()   <span class="c"># গড়, min, max — সারসংক্ষেপ</span></code></pre>
+</div>
+
+<div class="card">
+<h2>৬. কলাম ও রো বাছাই</h2>
+<pre><code>df['sales']            <span class="c"># শুধু sales কলাম</span>
+df[['name', 'sales']]  <span class="c"># একাধিক কলাম</span>
+df.iloc[0]             <span class="c"># প্রথম রো (position দিয়ে)</span>
+df.iloc[0:3]           <span class="c"># প্রথম ৩টা রো</span></code></pre>
+</div>
+
+<div class="card">
+<h2>৭. শর্ত দিয়ে ফিল্টার ⭐</h2>
+<p>সবচেয়ে মজার অংশ — শর্ত লিখলেই মিলে যাওয়া রো পাবেন:</p>
+<pre><code>df[df['sales'] > 600]                  <span class="c"># বিক্রি ৬০০-এর বেশি</span>
+df[df['city'] == 'Dhaka']              <span class="c"># শুধু ঢাকার রো</span>
+df[(df['sales'] > 600) &
+   (df['city'] == 'Dhaka')]            <span class="c"># দুটো শর্ত একসাথে</span></code></pre>
+<div class="tip">💡 খেয়াল করুন: শর্তের দুই পাশে <code>()</code> ব্র্যাকেট দিতে হয়, আর <code>&</code> মানে "এবং"।</div>
+</div>
+
+<div class="card">
+<h2>৮. সাজানো (Sorting)</h2>
+<pre><code>df.sort_values('sales')                    <span class="c"># ছোট → বড়</span>
+df.sort_values('sales', ascending=False)   <span class="c"># বড় → ছোট</span></code></pre>
+</div>
+
+<div class="card">
+<h2>৯. গ্রুপ করে হিসাব (GroupBy) ⭐</h2>
+<p>রিপোর্ট বানানোর সবচেয়ে কাজের ফাংশন:</p>
+<pre><code>df.groupby('city')['sales'].sum()    <span class="c"># প্রতি শহরের মোট বিক্রি</span>
+df.groupby('city')['sales'].mean()   <span class="c"># প্রতি শহরের গড় বিক্রি</span>
+df.groupby('city').size()            <span class="c"># প্রতি শহরে কতগুলো রো</span></code></pre>
+</div>
+
+<div class="card">
+<h2>১০. গণনা এক লাইনে</h2>
+<pre><code>df['city'].value_counts()   <span class="c"># কোন শহর কতবার এসেছে</span></code></pre>
+</div>
+
+<div class="card">
+<h2>১১. খালি ঘর সামলানো</h2>
+<p>বাস্তব ডেটায় খালি ঘর থাকবেই:</p>
+<pre><code>df.isnull().sum()   <span class="c"># কোন কলামে কতগুলো খালি</span>
+df.dropna()         <span class="c"># খালি ঘরওয়ালা রো বাদ দিন</span>
+df.fillna(0)        <span class="c"># খালি ঘরে ০ বসান</span></code></pre>
+</div>
+
+<div class="card">
+<h2>১২. নতুন কলাম বানানো</h2>
+<pre><code>df['bonus'] = df['sales'] * 0.1       <span class="c"># বিক্রির ১০% বোনাস</span>
+df['big_sale'] = df['sales'] > 600    <span class="c"># True/False কলাম</span></code></pre>
+</div>
+
+<div class="card">
+<h2>১৩. ফলাফল সেভ করা</h2>
+<pre><code>df.to_csv('clean_sales.csv', index=False)
+df.to_excel('report.xlsx', index=False)</code></pre>
+</div>
+
+<div class="card">
+<h2>১৪. পুরো উদাহরণ — দোকানের হিসাব</h2>
+<pre><code>import pandas as pd
+
+<span class="c"># ১. ফাইল পড়ুন</span>
+df = pd.read_csv('sales.csv')
+
+<span class="c"># ২. ডেটা চিনুন</span>
+print(df.shape)
+print(df.describe())
+
+<span class="c"># ৩. গড় বিক্রি কত?</span>
+print("গড় বিক্রি:", df['sales'].mean())
+
+<span class="c"># ৪. কোন পণ্য সবচেয়ে বেশি বিক্রি?</span>
+print(df.groupby('product')['sales'].sum()
+        .sort_values(ascending=False))
+
+<span class="c"># ৫. কম বিক্রির দিনগুলো</span>
+low = df[df['sales'] &lt; 300]
+print(low)
+
+<span class="c"># ৬. পরিষ্কার ডেটা সেভ</span>
+df.to_csv('clean_sales.csv', index=False)</code></pre>
+</div>
+
+<div class="card">
+<h2>১৫. চর্চার কাজ ✍️</h2>
+<div class="ex"><b>কাজ ১:</b> নিজের নাম, ৩ বন্ধুর নাম-শহর দিয়ে একটা DataFrame বানান। <code>df.describe()</code> চালিয়ে দেখুন কী আসে।</div>
+<div class="ex"><b>কাজ ২:</b> <code>df[df['city'] == 'Dhaka']</code> — নিজের শহরের নাম বসিয়ে ফিল্টার করুন।</div>
+<div class="ex"><b>কাজ ৩:</b> <code>groupby</code> দিয়ে বের করুন — আপনার টেবিলে কোন শহরের মোট sales বেশি?</div>
+</div>
+
+<div class="card">
+<h2>⚡ Cheat Sheet</h2>
+<table>
+<tr><th>কাজ</th><th>কোড</th></tr>
+<tr><td>ফাইল পড়া</td><td><code>pd.read_csv()</code></td></tr>
+<tr><td>প্রথম রো দেখা</td><td><code>df.head()</code></td></tr>
+<tr><td>সারসংক্ষেপ</td><td><code>df.describe()</code></td></tr>
+<tr><td>ফিল্টার</td><td><code>df[df['x'] &gt; 5]</code></td></tr>
+<tr><td>গ্রুপ হিসাব</td><td><code>df.groupby('x')['y'].sum()</code></td></tr>
+<tr><td>গণনা</td><td><code>df['x'].value_counts()</code></td></tr>
+<tr><td>সাজানো</td><td><code>df.sort_values('x')</code></td></tr>
+<tr><td>খালি বাদ</td><td><code>df.dropna()</code></td></tr>
+<tr><td>সেভ</td><td><code>df.to_csv()</code></td></tr>
+</table>
+</div>
+
+<footer>© 2026 Muhammad Imran Akanda • প্যান্ডাস গাইড • পরের ধাপ: Matplotlib দিয়ে গ্রাফ</footer>
+</div>
+</body>
+</html>
