@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — n8n Personal Automation</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.5rem; } h2 { font-size: 1.1rem; margin-top: 1.6rem; }
+  footer { margin-top: 2.5rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy — “n8n” Personal Automation</h1>
+<p>Last updated: 7 November 2026</p>
+
+<p>“n8n” is a private, single-user automation owned and operated by Imran Akanda for his
+personal use only. It is not a public service and has no other users. This page explains how
+the automation handles data, as required for its Google OAuth consent screen.</p>
+
+<h2>What the automation does</h2>
+<p>Once a day, the automation builds a short morning message for its owner containing
+(1) the local weather forecast and (2) the owner’s calendar events for that day, and sends
+that message to the owner through Telegram.</p>
+
+<h2>Google user data accessed</h2>
+<p>Through Google OAuth, the automation reads the owner’s Google Calendar events
+(event titles, times and descriptions) at the moment the daily message is composed.
+Access is limited to the owner’s own account; the owner is the only person who can sign in.</p>
+
+<h2>How the data is used and shared</h2>
+<ul>
+  <li>Calendar data is used only to compose the owner’s own daily message. It is never sold,
+      rented, or used for advertising.</li>
+  <li>The composed message (weather + today’s events) is delivered to the owner via the
+      Telegram Bot API. Weather data comes from the public Open-Meteo API; only geographic
+      coordinates are sent to that service.</li>
+  <li>No calendar data is shared with any other third party.</li>
+</ul>
+
+<h2>Storage and retention</h2>
+<p>The automation runs on the owner’s own n8n instance. Calendar data passes through the
+workflow in memory while a run executes; it is not copied into any separate database or
+analytics system. Standard execution logs are retained only for troubleshooting the
+automation itself.</p>
+
+<h2>Revoking access</h2>
+<p>Access can be revoked at any time from the Google Account permissions page:
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+Revoking access stops the automation from reading calendar data immediately.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:emrankhan172@gmail.com">emrankhan172@gmail.com</a></p>
+
+<footer>© 2026 Imran Akanda. This automation is a personal project and is not affiliated with Google, Telegram, or n8n.</footer>
+</body>
+</html>
