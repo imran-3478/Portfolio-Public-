@@ -9,7 +9,7 @@
 <meta name="robots" content="index, follow">
 <meta name="author" content="Md. Al Imran Akanda">
 <meta name="keywords" content="Flutter developer Bangladesh, Meta Pixel specialist, Facebook ads tracking, AI chatbot developer, mobile app developer Tangail, brand designer Bangladesh, Imran Akanda">
-<meta name="theme-color" content="#EBE9E5">
+<meta name="theme-color" content="#0a0a0a">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Imran Akanda — Portfolio">
 <meta property="og:title" content="Md. Al Imran Akanda — Flutter Developer & Meta Pixel Specialist">
@@ -26,21 +26,29 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#FAFAF8; --surface:#FFFFFF; --soft:#F3F3F0;
-  --border:#E8E8E3; --border2:#DBDBD3;
-  --text:#101010; --muted:#6E6E66; --muted2:#A3A39A;
-  --green:#0B7042; --green-b:#0bb36b;
-  --radius:20px;
+  --bg:#0a0a0a; --bg-elev:#111111; --surface:#151515; --surface-hi:#1b1b1b;
+  --border:#262626; --border-soft:#1d1d1d; --border2:#3a3a3a;
+  --text:#f3f3ef; --text-dim:#9d9d97; --text-faint:#5c5c58;
+  --muted:#9d9d97; --muted2:#5c5c58; --soft:#1b1b1b;
+  --green:#ffffff; --green-b:#ffffff;
+  --radius:14px;
+  --font-head:'Space Grotesk','Hind Siliguri',sans-serif;
+  --font-body:'Inter','Hind Siliguri',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono','Hind Siliguri',monospace;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:'Inter','Hind Siliguri',system-ui,sans-serif;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--font-head)}
+::selection{background:#f3f3ef;color:#0a0a0a}
+.eyebrow{font-family:var(--font-mono);font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--text-faint)}
 a{color:inherit;text-decoration:none}
 img{max-width:100%}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
 /* ---------- LIQUID SCULPTURE HERO (by guglielmogiannattasio.it) ---------- */
 .sh-root{position:relative;width:100%;height:var(--sh-h);overflow:hidden;isolation:isolate;container-type:size;transition:background-color .6s ease,color .6s ease;
   background:var(--sh-bg);color:var(--sh-fg);font-family:var(--sh-body);-webkit-font-smoothing:antialiased;
@@ -76,13 +84,13 @@ img{max-width:100%}
 .sh-spacer{flex:1 1 auto;min-height:0}
 .sh-content{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);align-items:end;
   gap:clamp(24px,4cqw,72px);padding:0 clamp(20px,3.2cqw,48px) clamp(28px,3.4cqw,52px)}
-.sh-eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.62;margin:0 0 clamp(14px,1.6cqw,22px);
+.sh-eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.62;margin:0 0 clamp(14px,1.6cqw,22px);
   display:flex;align-items:center;gap:12px}
 .sh-eyebrow::before{content:"";width:28px;height:1px;background:currentColor;opacity:.7}
 .sh-h1{font-family:var(--sh-head);font-weight:500;font-size:clamp(40px,min(6.6cqw,11.5cqh),124px);line-height:.92;letter-spacing:-.045em;margin:0;
   text-wrap:balance}
 .sh-h1 .sh-line{display:block}
-.sh-accent{font-family:var(--sh-accent);font-style:italic;font-weight:400;letter-spacing:-.02em;color:var(--sh-acc)}
+.sh-accent{font-family:var(--sh-accent);font-style:normal;font-weight:500;letter-spacing:-.02em;color:var(--sh-acc)}
 .sh-aside{max-width:400px;justify-self:end;padding-bottom:.6em}
 .sh-body{font-size:clamp(15px,1.1cqw,17px);line-height:1.5;letter-spacing:-.01em;margin:0 0 26px;opacity:.78;text-wrap:pretty}
 .sh-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:22px}
@@ -122,65 +130,65 @@ img{max-width:100%}
 /* ---------- PAGE SECTIONS ---------- */
 section{padding:56px 0 8px}
 .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:8px}
-.sec-head h2{font-size:clamp(1.7rem,6vw,2.5rem);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.sec-head h2{font-size:clamp(1.7rem,6vw,2.5rem);font-weight:600;letter-spacing:-.02em;line-height:1.1}
 .sec-head .sub{color:var(--muted);font-size:1rem;margin-top:6px}
-.sec-head .view{font-size:.95rem;font-weight:600;color:var(--muted);white-space:nowrap;padding-bottom:4px}
+.sec-head .view{font-family:var(--font-mono);font-size:.8rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap;padding-bottom:4px}
 .sec-head .view:hover{color:var(--text)}
 .sec-body{margin-top:26px}
-.stats-card{background:#fff;border:1px solid var(--border);border-radius:24px;box-shadow:0 10px 34px rgba(16,16,16,.05);padding:26px 24px;display:flex;flex-direction:column;align-items:center;gap:18px}
-.stats-card img{width:120px;height:120px;object-fit:cover;border-radius:50%;display:block;background:var(--soft)}
+.stats-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;box-shadow:none;padding:26px 24px;display:flex;flex-direction:column;align-items:center;gap:18px}
+.stats-card img{width:120px;height:120px;object-fit:cover;border-radius:50%;display:block;background:var(--surface-hi);border:1px solid var(--border)}
 .stats-card .who{text-align:center}
-.stats-card .who .nm{font-weight:800;font-size:1.15rem;letter-spacing:-.02em}
+.stats-card .who .nm{font-family:var(--font-head);font-weight:600;font-size:1.15rem;letter-spacing:-.02em}
 .stats-card .who .rl{color:var(--muted);font-size:.92rem;margin-top:2px}
-.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:0;width:100%;border-top:1px solid var(--border);padding-top:20px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:0;width:100%;border-top:1px solid var(--border-soft);padding-top:20px}
 .stat{text-align:center;padding:4px 6px}
-.stat .n{font-size:1.55rem;font-weight:800;letter-spacing:-.03em}
-.stat .l{font-size:.8rem;color:var(--muted);margin-top:2px}
-.about-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:30px 26px;font-size:1.01rem;color:#3d3d38;box-shadow:0 2px 10px rgba(16,16,16,.03)}
+.stat .n{font-family:var(--font-head);font-size:1.55rem;font-weight:600;letter-spacing:-.02em}
+.stat .l{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.about-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:30px 26px;font-size:1.01rem;color:var(--text-dim);box-shadow:none}
 .about-card b{color:var(--text)}
-.about-card .bn{font-family:'Hind Siliguri',sans-serif;color:var(--green);font-weight:600}
+.about-card .bn{font-family:'Hind Siliguri',sans-serif;color:#ffffff;font-weight:600}
 .skills{display:flex;flex-wrap:wrap;gap:9px}
-.skill{font-size:.88rem;font-weight:500;padding:9px 16px;border-radius:999px;background:#fff;border:1px solid var(--border);color:#3d3d38;transition:.2s}
-.skill:hover{border-color:#101010;color:var(--text);transform:translateY(-2px)}
+.skill{font-size:.88rem;font-weight:500;padding:9px 16px;border-radius:999px;background:var(--surface);border:1px solid var(--border);color:var(--text-dim);transition:.2s}
+.skill:hover{border-color:var(--text);color:var(--text);transform:translateY(-2px)}
 .cards{display:grid;grid-template-columns:1fr;gap:18px}
-.card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s}
-.card:hover{transform:translateY(-4px);border-color:var(--border2);box-shadow:0 16px 40px rgba(16,16,16,.09)}
-.preview{height:168px;display:flex;align-items:center;justify-content:center;position:relative;border-bottom:1px solid var(--border)}
-.preview .big{font-size:3.4rem;filter:drop-shadow(0 6px 14px rgba(16,16,16,.12))}
-.preview .num{position:absolute;top:14px;left:16px;font-size:.72rem;font-weight:700;letter-spacing:.14em;color:rgba(16,16,16,.45);background:rgba(255,255,255,.75);border:1px solid rgba(16,16,16,.06);padding:4px 10px;border-radius:999px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-2px);border-color:var(--border2);box-shadow:0 14px 34px rgba(0,0,0,.45)}
+.preview{height:168px;display:flex;align-items:center;justify-content:center;position:relative;border-bottom:1px solid var(--border-soft)}
+.preview .big{font-size:3.4rem;filter:drop-shadow(0 6px 14px rgba(0,0,0,.5))}
+.preview .num{position:absolute;top:14px;left:16px;font-family:var(--font-mono);font-size:.7rem;font-weight:500;letter-spacing:.14em;color:rgba(243,243,239,.6);background:rgba(10,10,10,.55);border:1px solid rgba(255,255,255,.09);padding:4px 10px;border-radius:999px}
 .card-body{padding:22px 22px 24px}
-.card-body h3{font-size:1.13rem;font-weight:700;letter-spacing:-.015em;margin-bottom:7px}
+.card-body h3{font-size:1.13rem;font-weight:600;letter-spacing:-.015em;margin-bottom:7px}
 .card-body p{color:var(--muted);font-size:.93rem}
 .tags{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 16px}
-.tag{font-size:.74rem;font-weight:500;color:#55554e;background:var(--soft);border:1px solid var(--border);padding:4px 11px;border-radius:999px}
+.tag{font-family:var(--font-mono);font-size:.66rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:var(--text-dim);background:var(--surface-hi);border:1px solid var(--border-soft);padding:4px 11px;border-radius:999px}
 .card-body a.link{display:inline-flex;align-items:center;gap:7px;font-weight:600;color:var(--text);font-size:.93rem}
 .card-body a.link:hover{text-decoration:underline}
 .card-body a.link.disabled{color:var(--muted2);cursor:default;font-weight:500}
 .gig-link{margin-top:12px;font-size:.88rem}
-.gig-link a{color:var(--green);font-weight:600}
+.gig-link a{color:#ffffff;font-weight:600}
 .gig-link a:hover{text-decoration:underline}
-.svc .tile{width:52px;height:52px;border:1px solid var(--border);border-radius:14px;background:var(--soft);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:16px}
+.svc .tile{width:52px;height:52px;border:1px solid var(--border);border-radius:14px;background:var(--surface-hi);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:16px}
 .svc{padding:26px 24px}
-.svc h3{font-size:1.1rem;font-weight:700;letter-spacing:-.015em;margin-bottom:7px}
+.svc h3{font-size:1.1rem;font-weight:600;letter-spacing:-.015em;margin-bottom:7px}
 .svc p{color:var(--muted);font-size:.93rem}
-.chat-card{background:#fff;border:1px solid var(--border);border-radius:24px;overflow:hidden;box-shadow:0 10px 34px rgba(16,16,16,.05)}
+.chat-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:none}
 .chat-card iframe{width:100%;height:600px;border:none;display:block}
-.contact-card{background:#101010;color:#fff;border-radius:24px;padding:42px 26px;text-align:center}
-.contact-card h2{font-size:clamp(1.6rem,6vw,2.3rem);font-weight:800;letter-spacing:-.03em;margin-bottom:10px}
-.contact-card p{color:#b9b9b2;max-width:520px;margin:0 auto 26px}
+.contact-card{background:var(--bg-elev);color:var(--text);border:1px solid var(--border);border-radius:14px;padding:42px 26px;text-align:center}
+.contact-card h2{font-size:clamp(1.6rem,6vw,2.3rem);font-weight:600;letter-spacing:-.02em;margin-bottom:10px}
+.contact-card p{color:var(--text-dim);max-width:520px;margin:0 auto 26px}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:560px;margin:0 auto 26px;text-align:left}
-.c-item{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:14px;padding:14px 16px;font-size:.92rem;font-weight:600;transition:.2s;color:#fff}
-.c-item:hover{border-color:rgba(255,255,255,.4)}
+.c-item{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px 16px;font-size:.92rem;font-weight:600;transition:.2s;color:var(--text)}
+.c-item:hover{border-color:var(--border2);background:var(--surface-hi)}
 .c-item .e{font-size:1.25rem}
-.c-item small{display:block;color:#a9a9a1;font-weight:500;font-size:.75rem}
+.c-item small{display:block;color:var(--text-faint);font-weight:500;font-size:.75rem}
 .btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;padding:13px 26px;border-radius:999px;font-size:.98rem;transition:transform .15s,background .2s}
 .btn:active{transform:scale(.97)}
-.btn-white{background:#fff;color:#101010}
+.btn-white{background:#ffffff;color:#0a0a0a}
 .btn-white:hover{background:#e9e9e4}
-footer{border-top:1px solid var(--border);margin-top:64px;padding:30px 0;text-align:center;color:var(--muted);font-size:.88rem}
-footer .f-logo{font-weight:800;color:var(--text);font-size:1.05rem;margin-bottom:6px;letter-spacing:-.02em}
-footer .f-logo span{color:var(--muted);font-weight:600}
-.wa-float{position:fixed;bottom:22px;right:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;font-size:1.7rem;box-shadow:0 10px 28px rgba(37,211,102,.4);transition:transform .2s}
+footer{border-top:1px solid var(--border-soft);margin-top:64px;padding:30px 0;text-align:center;color:var(--muted);font-size:.88rem}
+footer .f-logo{font-family:var(--font-head);font-weight:600;color:var(--text);font-size:1.05rem;margin-bottom:6px;letter-spacing:-.02em}
+footer .f-logo span{color:var(--text-faint);font-weight:500}
+.wa-float{position:fixed;bottom:22px;right:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:#ffffff;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.7rem;box-shadow:0 10px 28px rgba(0,0,0,.55);transition:transform .2s}
 .wa-float:hover{transform:scale(1.08)}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:none}
@@ -199,7 +207,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
 </head>
 <body>
 
-<header class="sh-root" id="heroRoot" style="--sh-bg:#EBE9E5;--sh-fg:#151514;--sh-acc:#151514;--sh-head:'Geist','Helvetica Neue',Arial,sans-serif;--sh-accent:'Instrument Serif','Times New Roman',serif;--sh-body:'Geist','Helvetica Neue',Arial,sans-serif;--sh-h:100svh">
+<header class="sh-root" id="heroRoot" style="--sh-bg:#0a0a0a;--sh-fg:#f3f3ef;--sh-acc:#ffffff;--sh-head:'Space Grotesk','Hind Siliguri',sans-serif;--sh-accent:'Space Grotesk','Hind Siliguri',sans-serif;--sh-body:'Inter','Hind Siliguri',sans-serif;--sh-h:100svh">
   <div class="sh-backdrop" id="heroBackdrop" aria-hidden="true">imran</div>
   <div class="sh-stage" id="heroStage" aria-hidden="true">
     <img class="sh-fallback" id="heroFallback" src="https://cdn.21st.dev/assets/mirror/ae/ae8c3de9003460e59182e950ccd345f68f27f9d0e4808b64c92c962a4eca7120.webp" alt="" crossorigin="anonymous" draggable="false">
@@ -215,7 +223,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
       <li><a class="sh-link" href="#projects">Projects</a></li>
       <li><a class="sh-link" href="#certificates">Certificates</a></li>
       <li><a class="sh-link" href="#security">Security</a></li>
-      <li class="sh-keep"><button type="button" class="sh-theme" id="heroThemeBtn" aria-label="Switch to dark theme"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.6 10.1A5.9 5.9 0 0 1 5.9 2.4a5.9 5.9 0 1 0 7.7 7.7Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></button></li>
+      <li class="sh-keep"><button type="button" class="sh-theme" id="heroThemeBtn" aria-label="Switch to light theme"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.6 10.1A5.9 5.9 0 0 1 5.9 2.4a5.9 5.9 0 1 0 7.7 7.7Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></button></li>
       <li class="sh-keep"><a class="sh-navcta" href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -263,6 +271,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
   <div class="wrap">
     <div class="sec-head reveal">
       <div>
+        <p class="eyebrow">ABOUT</p>
         <h2>About</h2>
         <p class="sub">Builder, not just a coder</p>
       </div>
@@ -282,6 +291,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
   <div class="wrap">
     <div class="sec-head reveal">
       <div>
+        <p class="eyebrow">SKILLS</p>
         <h2>Skills</h2>
         <p class="sub">The tools I reach for every day</p>
       </div>
@@ -308,6 +318,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
   <div class="wrap">
     <div class="sec-head reveal">
       <div>
+        <p class="eyebrow">SERVICES</p>
         <h2>Services</h2>
         <p class="sub">End-to-end delivery — from idea to a live, working product</p>
       </div>
@@ -330,6 +341,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
   <div class="wrap">
     <div class="sec-head reveal">
       <div>
+        <p class="eyebrow">PROJECTS</p>
         <h2>Top projects</h2>
         <p class="sub">The most loved builds — real products, live on the internet</p>
       </div>
@@ -338,7 +350,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
     <div class="sec-body">
       <div class="cards">
         <div class="card reveal">
-          <div class="preview" style="background:linear-gradient(135deg,#E7F6EE,#F4FBF7)"><span class="num">01</span><span class="big">🛺</span></div>
+          <div class="preview" style="background:linear-gradient(135deg,#151515,#1e1e1e)"><span class="num">01</span><span class="big">🛺</span></div>
           <div class="card-body">
             <h3>CNG Ride</h3>
             <p>Ride-hailing app for Tangail — native Flutter app with FCM push alerts, background live location and satellite view, plus a matching web app.</p>
@@ -347,7 +359,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
           </div>
         </div>
         <div class="card reveal">
-          <div class="preview" style="background:linear-gradient(135deg,#FDF3E3,#FFFAF0)"><span class="num">02</span><span class="big">🛡️</span></div>
+          <div class="preview" style="background:linear-gradient(135deg,#141414,#1c1c1c)"><span class="num">02</span><span class="big">🛡️</span></div>
           <div class="card-body">
             <h3>GushKhor</h3>
             <p>Anti-corruption reporting platform — submit reports with private, signed-URL evidence handling and anti-spam protection.</p>
@@ -356,7 +368,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
           </div>
         </div>
         <div class="card reveal">
-          <div class="preview" style="background:linear-gradient(135deg,#EAF0FE,#F5F8FF)"><span class="num">03</span><span class="big">🧠</span></div>
+          <div class="preview" style="background:linear-gradient(135deg,#161616,#202020)"><span class="num">03</span><span class="big">🧠</span></div>
           <div class="card-body">
             <h3>LLM Bangla</h3>
             <p>"How AI thinks" — a 9-step visual guide to Large Language Models in Bengali, with a 3-minute explainer video.</p>
@@ -365,7 +377,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
           </div>
         </div>
         <div class="card reveal">
-          <div class="preview" style="background:linear-gradient(135deg,#FCEEF5,#FFF5FA)"><span class="num">04</span><span class="big">💄</span></div>
+          <div class="preview" style="background:linear-gradient(135deg,#131313,#1b1b1b)"><span class="num">04</span><span class="big">💄</span></div>
           <div class="card-body">
             <h3>Haidar Cosmetics — Brand Kit</h3>
             <p>Complete brand identity: logo, business cards, signboard, social covers and standee — plus an AI-generated video ad with Bengali voiceover.</p>
@@ -374,7 +386,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
           </div>
         </div>
         <div class="card reveal">
-          <div class="preview" style="background:linear-gradient(135deg,#EFEAFE,#F7F3FF)"><span class="num">05</span><span class="big">🤖</span></div>
+          <div class="preview" style="background:linear-gradient(135deg,#151515,#1f1f1f)"><span class="num">05</span><span class="big">🤖</span></div>
           <div class="card-body">
             <h3>GushKhor AI — Meta Hackathon</h3>
             <p>AI upgrade of GushKhor, submitted to the Meta Global AI Developer Hackathon: a citizen's plain-Bengali corruption report is classified, severity-scored and turned into a formal complaint letter addressed to the right authority.</p>
@@ -384,7 +396,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
           </div>
         </div>
         <div class="card reveal">
-          <div class="preview" style="background:linear-gradient(135deg,#FDECEC,#FFF5F5)"><span class="num">06</span><span class="big">🔐</span></div>
+          <div class="preview" style="background:linear-gradient(135deg,#141414,#1d1d1d)"><span class="num">06</span><span class="big">🔐</span></div>
           <div class="card-body">
             <h3>Security Research — HackerOne &amp; TryHackMe</h3>
             <p>Security researcher in training from Bangladesh. Hands-on offensive security training (TryHackMe Pentesting path, OverTheWire Bandit) and responsible disclosure through HackerOne. Focus areas: IDOR, broken access control, information disclosure and security misconfiguration.</p>
@@ -402,6 +414,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
   <div class="wrap">
     <div class="sec-head reveal">
       <div>
+        <p class="eyebrow">MORE PROJECTS</p>
         <h2>New &amp; noteworthy</h2>
         <p class="sub">Guides, courses and deep-dives worth your time</p>
       </div>
@@ -409,7 +422,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
     <div class="sec-body">
       <div class="cards">
         <div class="card reveal">
-          <div class="preview" style="background:linear-gradient(135deg,#FFF4E0,#FFFBF2)"><span class="num">05</span><span class="big">🎓</span></div>
+          <div class="preview" style="background:linear-gradient(135deg,#161616,#202020)"><span class="num">05</span><span class="big">🎓</span></div>
           <div class="card-body">
             <h3>Google Ads Full Course (বাংলায়)</h3>
             <p>6-video Bengali course: how Google Ads works, account setup, keywords &amp; bidding, ad copy, optimization and getting clients — with Bengali voiceover.</p>
@@ -418,7 +431,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
           </div>
         </div>
         <div class="card reveal">
-          <div class="preview" style="background:linear-gradient(135deg,#E9F7F1,#F4FCF8)"><span class="num">06</span><span class="big">📊</span></div>
+          <div class="preview" style="background:linear-gradient(135deg,#131313,#1c1c1c)"><span class="num">06</span><span class="big">📊</span></div>
           <div class="card-body">
             <h3>Data Analysis with Pandas</h3>
             <p>Sales data analysis in Python — totals, top products, groupby reports — with a Bengali explainer video and full written guide.</p>
@@ -427,7 +440,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
           </div>
         </div>
         <div class="card reveal">
-          <div class="preview" style="background:linear-gradient(135deg,#EFEAFB,#F8F5FF)"><span class="num">07</span><span class="big">🗄️</span></div>
+          <div class="preview" style="background:linear-gradient(135deg,#151515,#1e1e1e)"><span class="num">07</span><span class="big">🗄️</span></div>
           <div class="card-body">
             <h3>Database Engineering</h3>
             <p>How your app's data really works. <strong>PostgreSQL</strong> stores it permanently in structured tables — ACID transactions guarantee critical operations never half-complete. <strong>Stored procedures &amp; views</strong> run complex logic inside the database itself, eliminating slow round-trips. <strong>Redis</strong> keeps hot data (sessions, live locations) in RAM for millisecond responses, with TTL auto-expiry. <strong>Production setup</strong> adds Linux/VPS hosting, automated backup &amp; restore, replication for zero downtime, and query performance tuning. I build on this stack every day — CNG Ride and GushKhor both run on Supabase (PostgreSQL).</p>
@@ -436,7 +449,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
           </div>
         </div>
         <div class="card reveal">
-          <div class="preview" style="background:linear-gradient(135deg,#E8F4FD,#F3FAFF)"><span class="num">08</span><span class="big">🤖</span></div>
+          <div class="preview" style="background:linear-gradient(135deg,#141414,#1f1f1f)"><span class="num">08</span><span class="big">🤖</span></div>
           <div class="card-body">
             <h3>E-commerce AI Customer Support Agent</h3>
             <p>Agentic AI chatbot for online shops — answers FAQs (delivery, payment, returns), tracks orders by order ID, recommends products by budget &amp; preference, and hands complex cases to human agents. Stack: Python + FastAPI, LLM (Gemini/Groq), RAG + Chroma knowledge base, PostgreSQL and LangGraph tools — with production safety rules (verified order data, human handoff, API keys in .env). Full Bengali build guide included.</p>
@@ -451,9 +464,9 @@ footer .f-logo span{color:var(--muted);font-weight:600}
 
 <style>
 .cert-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:28px;align-items:center}
-.cert-img{display:block;border-radius:16px;overflow:hidden;border:1px solid rgba(127,127,127,.28);box-shadow:0 12px 32px rgba(0,0,0,.14);line-height:0}
+.cert-img{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:0 12px 32px rgba(0,0,0,.5);line-height:0}
 .cert-img img{width:100%;height:auto}
-.cert-txt h3{font-size:22px;margin:0 0 10px;line-height:1.3}
+.cert-txt h3{font-family:var(--font-head);font-weight:600;font-size:22px;margin:0 0 10px;line-height:1.3}
 .cert-txt p{line-height:1.65;opacity:.86;margin:0}
 @media (max-width:820px){.cert-grid{grid-template-columns:1fr}}
 </style>
@@ -461,6 +474,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
   <div class="wrap">
     <div class="sec-head reveal">
       <div>
+        <p class="eyebrow">CERTIFICATES</p>
         <h2>Certificates</h2>
         <p class="sub">Verified training &amp; achievements</p>
       </div>
@@ -484,6 +498,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
   <div class="wrap">
     <div class="sec-head reveal">
       <div>
+        <p class="eyebrow">SECURITY RESEARCH</p>
         <h2>Security Research</h2>
         <p class="sub">Offensive security training &amp; responsible disclosure</p>
       </div>
@@ -502,6 +517,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
   <div class="wrap">
     <div class="sec-head reveal">
       <div>
+        <p class="eyebrow">AI ASSISTANT</p>
         <h2>AI Assistant</h2>
         <p class="sub">সার্ভিস, দাম বা যেকোনো প্রশ্ন করো — বাংলায় বা English-এ</p>
       </div>
@@ -517,6 +533,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
 <section id="contact">
   <div class="wrap">
     <div class="contact-card reveal">
+      <p class="eyebrow" style="justify-content:center">CONTACT</p>
       <h2>Let's build something together</h2>
       <p>Have an app idea, need Pixel tracking, or want an AI bot for your business? Message me — I reply fast.</p>
       <div class="contact-grid">
@@ -526,7 +543,7 @@ footer .f-logo span{color:var(--muted);font-weight:600}
         <a class="c-item" href="https://github.com/imran-3478"><span class="e">💻</span><span>GitHub<small>@imran-3478</small></span></a>
       </div>
       <a class="btn btn-white" href="https://wa.me/8801767462347?text=Hi%20Imran!%20I%20want%20to%20discuss%20a%20project.">💬 Start a Project on WhatsApp</a>
-      <p style="margin:18px 0 0;font-size:.85rem;color:#a9a9a1">📍 Tangail, Bangladesh</p>
+      <p style="margin:18px 0 0;font-size:.85rem;color:#5c5c58">📍 Tangail, Bangladesh</p>
     </div>
   </div>
 </section>
@@ -1468,7 +1485,7 @@ const HERO_CFG = {
   mobileSrc: "https://cdn.21st.dev/assets/mirror/b0/b0c8d8e5d64b8cec906a3b390e3dc7c9a5af08334bf0632873c601782cb4bc46.webp",
   mobileDarkSrc: "https://cdn.21st.dev/assets/mirror/9a/9a82cb59be1bfde59855b79d7a565e487155a89f4d52eac74dcc10e267b2b6d1.webp",
   background: "#EBE9E5",
-  darkBackground: "#111110",
+  darkBackground: "#0a0a0a",
   lightFg: "#151514",
 };
 
@@ -1506,7 +1523,7 @@ function computeRect(w, h, aspect, band, p) {
   const backdropEl = document.getElementById("heroBackdrop");
   const themeBtn = document.getElementById("heroThemeBtn");
 
-  let mode = "light";
+  let mode = "dark";
   let isMobile = false;
   let mobileFlag = false;
   let aspect = 1983 / 793;
@@ -1622,7 +1639,7 @@ function computeRect(w, h, aspect, band, p) {
   function applyTheme() {
     const dark = mode === "dark";
     root.style.setProperty("--sh-bg", dark ? HERO_CFG.darkBackground : HERO_CFG.background);
-    const fg = dark ? "#F1EFEA" : HERO_CFG.lightFg;
+    const fg = dark ? "#F3F3EF" : HERO_CFG.lightFg;
     root.style.setProperty("--sh-fg", fg);
     root.style.setProperty("--sh-acc", fg);
     if (themeBtn) {
